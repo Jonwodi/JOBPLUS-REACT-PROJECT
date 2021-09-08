@@ -15,8 +15,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 const useStyles = makeStyles((theme) => ({
   container: {
     //migrate to theme.js
-    width: '900px',
-    margin: '0 auto',
+    ...theme.container
     // border: '1px yellow dotted'
   },
   iconsWrap: {
