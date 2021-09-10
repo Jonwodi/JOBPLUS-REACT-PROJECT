@@ -2,6 +2,7 @@ import { AppBar, Badge, Box, Divider, Drawer, Hidden, IconButton, List, ListItem
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { makeStyles } from '@material-ui/styles';
+import { useState, useEffect } from 'react';
 
 import SearchIcon from '@material-ui/icons/Search';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
@@ -60,42 +61,72 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Navbar() {
   const classes = useStyles();
+
+  const [openDrawer, setOpenDrawer] = useState(false);
+
+  const handleDrawerOpen = () => {
+    setOpenDrawer(true)
+  }
+
+  const handleDrawerClose = () => {
+    setOpenDrawer(false)
+  }
+
+  const [tabIndex, setTabIndex] = useState(false);
+
+  const handleTabIndexChange = (event, index) => {
+    setTabIndex(index)
+  }
+
+  const routes = [
+  {name: 'Home', Link: '/', index: 0}, 
+  {name: 'Job Listings', Link: '/job-listings', index: 1}, 
+  {name: 'Job Applications', Link: '/job-applications', index: 2}
+];
+
+useEffect(() => {
+  routes.forEach(route => {
+    switch (window.location.pathname) {
+      case `${route.Link}`:
+        setTabIndex(route);
+        break;
+      default:
+        return false;
+    }
+  });
+}, [window.location.pathname]);
+  
   return (
 <Box>
   <AppBar position="static">
-    <Drawer variant="persistent" anchor="left" open={true}>
+    <Drawer variant="persistent" anchor="left" open={openDrawer}>
     <div className={classes.drawerHeader}>
-      <IconButton>
+      <IconButton onClick={handleDrawerClose}>
         <ChevronLeftIcon />
       </IconButton>
      </div>
      <Divider />
      <List>
-       <ListItem key={0} component={Link} to={"/"} selected={true} button>
-         <ListItemText primary={"Home"} />
-       </ListItem>
+       {routes.map((route, index) => (
+       <ListItem key={`${route}${index}`} component={Link} to={route.Link} selected={window.location.pathname === route.Link} onClick={handleDrawerClose} button>
+         <ListItemText primary={route.name} />
+       </ListItem>))}
 
-        <ListItem key={1} component={Link} to={"/job-listings"} selected={false} button>
-         <ListItemText primary={"Job Listings"} />
-       </ListItem>
 
-        <ListItem key={2} component={Link} to={"/job-applications"} selected={false} button>
-         <ListItemText primary={"Job Applications"} />
-       </ListItem>
      </List>
     </Drawer>
     <Toolbar className={classes.container}>
       <Hidden mdUp>
-        <IconButton edge="start" color="inherit" aria-label="menu">
+        <IconButton edge="start" color="inherit" aria-label="menu" onClick={handleDrawerOpen}>
           <MenuIcon className={classes.hamburger}/>
         </IconButton>
       </Hidden>
       <Typography component="h6" className={classes.logo}>JOBPLUS</Typography>
       <Hidden smDown>
-      <Tabs value={0} className={classes.tabs} classes={{indicator: classes.indicator}}>
-        <Tab key={0} label={'Home'} component={Link} to={'/'} />
-        <Tab key={1} label={'Job Listings'} component={Link} to={'/job-listings'}  />
-        <Tab key={2} label={'Job Applications'} component={Link} to={'/job-applications'} />
+      <Tabs value={tabIndex} className={classes.tabs} classes={{indicator: classes.indicator}} onChange={handleTabIndexChange}>
+        {routes.map((route, index) => (
+          <Tab key={`${route}${index}`} label={route.name} component={Link} to={route.Link} />
+        ))}
       </Tabs>
       </Hidden>
 
