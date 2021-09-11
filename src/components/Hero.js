@@ -1,9 +1,12 @@
 import React from 'react'
+import Controls from './controls/Controls'
 
-export default function Hero() {
+export default function Hero(props) {
   return (
-    <div>
-      This is my Hero component...
-    </div>
+    <>
+      <Controls.FormGroupCustom>
+      <Controls.ButtonCustom text="Search" />
+      </Controls.FormGroupCustom>
+    </>
   )
 }
