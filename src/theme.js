@@ -45,20 +45,23 @@ export default createTheme({
   container: {
     width: '900px',
     margin: '0 auto',
-    // padding: '0 2rem',
+    padding: '0',
     [breakpoints.down('sm')]: {
       width: '100%',
+    }, 
+  [breakpoints.down('md')]: {
+     padding: 'o 20px',
     },
   },
-  fonts: {
-    bold: {
-      fontFamily: 'OpenSans-Bold',
+    fonts: {
+      bold: {
+        fontFamily: 'OpenSans-Bold',
+      },
+      extraBold: {
+        fontFamily: 'OpenSans-ExtraBold'
+      },
+      light: {
+        fontFamily: 'OpenSans-Light',
+      }
     },
-    extraBold: {
-      fontFamily: 'OpenSans-ExtraBold'
-    },
-    light: {
-      fontFamily: 'OpenSans-Light',
-    }
-  },
-});
+  });
