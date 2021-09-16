@@ -6,6 +6,7 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import TimerIcon from '@material-ui/icons/Timer';
 import { Link } from 'react-router-dom';
 import React from 'react'
+import Controls from './controls/Controls';
 
 const useStyles = makeStyles((theme) => ({
  root: {
@@ -76,13 +77,33 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'right',
     display: 'block',
     color: 'inherit',
+  },
+  skills: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    listStyle: 'none',
+    padding: '0',
+    marginBottom: '20px',
+    '& li': {
+      backgroundColor: theme.palette.common.skills,
+      padding: '7px 9px',
+      fontSize: '14px',
+      borderRadius: '16px',
+      marginRight: '10px',
+      marginBottom: '10px',
+    }
+  },
+  apply: {
+    marginBottom: '150px',
   }
 }));
 
-export default function Listing() {
+export default function Listing(props) {
   const classes = useStyles();
+  const { detailed = false } = props;
 
   return (
+<>
     <div className={classes.root}>
       <header className={classes.header}>
         <Typography className={classes.title} variant='h1'>Senior Software Project Manager</Typography>
@@ -94,11 +115,48 @@ export default function Listing() {
           <li><LocationOnIcon />Heyes, <b>Uxbridge</b></li>
           <li><TimerIcon />Contract, full-time</li>
         </ul>
-        <p className={classes.details}>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Explicabo, asperiores ullam minus at <b><Link to="/">Read more...</Link></b>
-        </p>
-       <Link className={classes.cta} to="/">Withdraw application</Link>
+
+
+        { !detailed ? (
+          <>
+            <p className={classes.details}>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Explicabo, asperiores ullam minus at <b><Link to="/listing-details">Read more...</Link></b>
+            </p>
+
+            <Link className={classes.cta} to="/">Withdraw application</Link>
+          </>
+        ) : (
+          <Controls.FormGroupCustom className={classes.button}>
+            <Controls.ButtonCustom text='Apply Now' />
+          </Controls.FormGroupCustom>
+          )}   
     </div>
+
+          {detailed ? (
+            <>
+              <p className={classes.details}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna diam, tristique sed ante ut, egestas viverra dolor. Donec scelerisque varius mi quis egestas. Nam nisl nisi, fringilla vehicula est eu, malesuada fringilla dolor. Nullam velit erat, venenatis et metus vel, mollis malesuada felis. Phasellus eleifend viverra turpis quis luctus.</p>
+
+              <p>Nullam vitae lacinia odio. Cras nulla massa, hendrerit eget vestibulum id, molestie vel metus. Integer at massa ex. Vivamus consectetur, ipsum eget vehicula aliquam, velit lacus luctus nisl, faucibus sodales velit ipsum a eros.</p>
+              <h3>Required Skills</h3>
+              <ul className={classes.skills}>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React JS</li>
+                <li>Python</li>
+                <li>Django</li>
+                <li>PostgreSQL</li>
+                <li>Rest APIs</li>
+              </ul>
+              <div className={classes.apply}>
+                <Controls.FormGroupCustom className={classes.button}>
+                  <Controls.ButtonCustom text='Apply Now' />
+                </Controls.FormGroupCustom>
+              </div>
+            </>
+          ) : ''}
+</>
+
   )
 }

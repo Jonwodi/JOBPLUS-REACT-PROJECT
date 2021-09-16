@@ -1,7 +1,8 @@
 import { Hidden, makeStyles } from '@material-ui/core';
-import React from 'react'
+import React, { Component } from 'react'
 import Filter from './Filter';
 import Listing from './Listing';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,20 +22,35 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function ListingFilter() {
+export default function ListingFilter(props) {
   const classes = useStyles();
+  const { components } = props;
+
+  const sectors = [
+    {Link: '/', name: 'Technology', count: 14},
+    {Link: '/', name: 'Engineering', count: 200},
+    {Link: '/', name: 'Health', count: 13},
+  ];
+
+  const locations = [
+    {Link: '/', name: 'Jobs in London', count: 14},
+    {Link: '/', name: 'Jobs in Worcester', count: 200},
+    {Link: '/', name: 'Jobs in Kent', count: 13},
+  ];
+
 
   return (
     <div className={classes.root}>
       <div className={classes.lblock}>
         <Hidden smDown>
-        <Filter />
-        <Filter />
+        <Filter title='Browse by Sector' items={sectors} />
+        <Filter title='Browse by Location' items={locations} />
         </Hidden>
       </div>
       <div className={classes.rblock}>
-        <Listing />
-        <Listing />
+        {components.map((comp) => (
+          comp
+        ))}
       </div>
     </div>
   )

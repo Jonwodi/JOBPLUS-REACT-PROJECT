@@ -1,12 +1,15 @@
 import React from 'react'
 import ListingFilter from '../components/ListingFilter'
 import PageTitle from '../components/PageTitle'
+import Listing from '../components/Listing';
 
 export default function Notifications() {
+  const listings = [<Listing />]
+
   return (
-    <div>
+    <>
       <PageTitle title='Notifications'/>
-      <ListingFilter />
-    </div>
+      <ListingFilter components={listings} />
+    </>
   )
 }
