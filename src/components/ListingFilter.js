@@ -10,7 +10,8 @@ const useStyles = makeStyles((theme) => ({
     gridTemplateColumns: 'min-content 1fr',
     gridGap: '1.2rem',
     ...theme.container,
-    marginTop: '1.5rem'
+    marginTop: '1.5rem',
+    marginBottom: '200px'
   },
   lblock: {
     gridRow: '1 / 2',

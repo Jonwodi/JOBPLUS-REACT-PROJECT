@@ -1,10 +1,19 @@
-import React from 'react'
-import PageTitle from '../components/PageTitle'
-import PaperForm from '../components/PaperForm'
-import Form from '../components/Form'
-import Controls from '../components/controls/Controls'
+import React from 'react';
+import PageTitle from '../components/PageTitle';
+import PaperForm from '../components/PaperForm';
+import Form from '../components/Form';
+import Controls from '../components/controls/Controls';
+import { Box, makeStyles } from '@material-ui/core';
+
+const useStyles = makeStyles((theme) => ({
+  box: {
+    marginBottom: '200px'
+  }
+}));
 
 export default function Profile() {
+    const classes = useStyles();
+
     const sectors = [
     { name: 'Technology' },
     { name: 'Engineering' },
@@ -12,7 +21,7 @@ export default function Profile() {
   ];
 
   return (
-    <>
+    <Box className={classes.box}>
       <PageTitle title='Profile' />
       <PaperForm>
         <Form>
@@ -48,7 +57,7 @@ export default function Profile() {
           </Controls.FormGroupCustom>
         </Form>
       </PaperForm>
-    </>
+    </Box>
   )
 }
 

@@ -4,7 +4,7 @@ import ListingFilter from '../components/ListingFilter';
 import Listing from '../components/Listing';
 
 export default function JobApplications() {
-  const listings = [<Listing />]
+  const listings = [<Listing />, <Listing />]
 
   return (
     <>
