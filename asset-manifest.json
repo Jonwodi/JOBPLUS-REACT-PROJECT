@@ -1,23 +1,19 @@
 {
   "files": {
-    "main.css": "/jobplus_react_frontend-Project/static/css/main.0b1048fe.chunk.css",
-    "main.js": "/jobplus_react_frontend-Project/static/js/main.f8d973d8.chunk.js",
-    "main.js.map": "/jobplus_react_frontend-Project/static/js/main.f8d973d8.chunk.js.map",
-    "runtime-main.js": "/jobplus_react_frontend-Project/static/js/runtime-main.1a2ed35a.js",
-    "runtime-main.js.map": "/jobplus_react_frontend-Project/static/js/runtime-main.1a2ed35a.js.map",
-    "static/js/2.2113071d.chunk.js": "/jobplus_react_frontend-Project/static/js/2.2113071d.chunk.js",
-    "static/js/2.2113071d.chunk.js.map": "/jobplus_react_frontend-Project/static/js/2.2113071d.chunk.js.map",
-    "static/js/3.e89bd8a3.chunk.js": "/jobplus_react_frontend-Project/static/js/3.e89bd8a3.chunk.js",
-    "static/js/3.e89bd8a3.chunk.js.map": "/jobplus_react_frontend-Project/static/js/3.e89bd8a3.chunk.js.map",
+    "main.css": "/jobplus_react_frontend-Project/static/css/main.a9e3d7c1.css",
+    "main.js": "/jobplus_react_frontend-Project/static/js/main.307d694e.js",
+    "static/js/787.a1ef7559.chunk.js": "/jobplus_react_frontend-Project/static/js/787.a1ef7559.chunk.js",
+    "static/media/OpenSans-Bold.ttf": "/jobplus_react_frontend-Project/static/media/OpenSans-Bold.dbb97fd982ce1b96b6de.ttf",
+    "static/media/OpenSans-ExtraBold.ttf": "/jobplus_react_frontend-Project/static/media/OpenSans-ExtraBold.110e781b605b33c1b949.ttf",
+    "static/media/OpenSans-Light.ttf": "/jobplus_react_frontend-Project/static/media/OpenSans-Light.ed41bedf131bc097372a.ttf",
+    "static/media/OpenSans-Regular.ttf": "/jobplus_react_frontend-Project/static/media/OpenSans-Regular.1b0809d519837cb7aad3.ttf",
     "index.html": "/jobplus_react_frontend-Project/index.html",
-    "static/css/main.0b1048fe.chunk.css.map": "/jobplus_react_frontend-Project/static/css/main.0b1048fe.chunk.css.map",
-    "static/js/2.2113071d.chunk.js.LICENSE.txt": "/jobplus_react_frontend-Project/static/js/2.2113071d.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/jobplus_react_frontend-Project/static/media/OpenSans-Regular.1b0809d5.ttf"
+    "main.a9e3d7c1.css.map": "/jobplus_react_frontend-Project/static/css/main.a9e3d7c1.css.map",
+    "main.307d694e.js.map": "/jobplus_react_frontend-Project/static/js/main.307d694e.js.map",
+    "787.a1ef7559.chunk.js.map": "/jobplus_react_frontend-Project/static/js/787.a1ef7559.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.1a2ed35a.js",
-    "static/js/2.2113071d.chunk.js",
-    "static/css/main.0b1048fe.chunk.css",
-    "static/js/main.f8d973d8.chunk.js"
+    "static/css/main.a9e3d7c1.css",
+    "static/js/main.307d694e.js"
   ]
 }
