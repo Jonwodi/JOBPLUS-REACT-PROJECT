@@ -88,7 +88,7 @@ useEffect(() => {
   routes.forEach(route => {
     switch (window.location.pathname) {
       case `${route.Link}`:
-        setTabIndex(route);
+        setTabIndex(route.index);
         break;
       default:
         return false;

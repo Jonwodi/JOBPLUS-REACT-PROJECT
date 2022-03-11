@@ -5,7 +5,7 @@ import Sector from '../components/Sector';
 export default function Home(props) {
   return (
     <div>
-      <Hero />
+      <Hero labelColor='secondary' />
       <Sector />
     </div>
   )

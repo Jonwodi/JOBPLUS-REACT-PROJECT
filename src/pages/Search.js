@@ -7,9 +7,9 @@ export default function Serach() {
   const listings = [<Listing />]
 
   return (
-    <>
+    <div>
       <Hero heroType='plain' />
       <ListingFilter components={listings} />
-    </>
+    </div>
   )
 }
