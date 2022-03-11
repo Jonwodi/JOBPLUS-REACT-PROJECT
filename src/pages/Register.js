@@ -4,12 +4,19 @@ import PageTitle from '../components/PageTitle'
 import PaperForm from '../components/PaperForm'
 import Controls from '../components/controls/Controls'
 import { Link } from 'react-router-dom'
+import { makeStyles } from '@material-ui/core'
 
+const useStyles = makeStyles((theme) => ({
+  registerForm: {
+    marginBottom: '300px'
+  }
+}))
 export default function Register() {
+  const classes = useStyles();
   return (
-    <>
+    <div className={classes.registerForm}>
       <PageTitle title='Register' />
-      <PaperForm>
+      <PaperForm >
         <Form>
           <Controls.FormGroupCustom>
             <Controls.InputLabelCustom color='primary' label="First name" />
@@ -42,6 +49,6 @@ export default function Register() {
         </Form>
         <p className={'Footer'}>Already have an account? <Link to="/login">Login</Link></p>
       </PaperForm>
-    </>
+    </div>
   )
 }

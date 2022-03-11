@@ -81,7 +81,7 @@ export default function Navbar() {
   const routes = [
   {name: 'Home', Link: '/', index: 0}, 
   {name: 'Job Listings', Link: '/job-listings', index: 1}, 
-  {name: 'Job Applications', Link: '/job-applications', index: 2}
+  {name: 'Job Applications', Link: '/job-applications', index: 2},
 ];
 
 useEffect(() => {

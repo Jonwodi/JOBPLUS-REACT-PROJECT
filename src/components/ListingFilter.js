@@ -1,5 +1,5 @@
 import { Hidden, makeStyles } from '@material-ui/core';
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import Filter from './Filter';
 import Listing from './Listing';
 

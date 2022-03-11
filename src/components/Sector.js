@@ -158,7 +158,6 @@ export default function Sector() {
           </Button>
         </div>
       </Hidden>
-
     </div>
   )
 }

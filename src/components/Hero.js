@@ -1,6 +1,6 @@
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
-import Controls from './controls/Controls'
+import Controls from './controls/Controls';
 import { makeStyles } from '@material-ui/styles';
 
 import clsx from 'clsx';

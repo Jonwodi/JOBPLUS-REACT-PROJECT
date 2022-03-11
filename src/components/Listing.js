@@ -5,7 +5,7 @@ import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import TimerIcon from '@material-ui/icons/Timer';
 import { Link } from 'react-router-dom';
-import React from 'react'
+import React from 'react';
 import Controls from './controls/Controls';
 
 const useStyles = makeStyles((theme) => ({
