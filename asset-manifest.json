@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/JOBPLUS-REACT-PROJECT/static/css/main.1fa1810d.css",
-    "main.js": "/JOBPLUS-REACT-PROJECT/static/js/main.e01a4a81.js",
-    "static/js/787.a1ef7559.chunk.js": "/JOBPLUS-REACT-PROJECT/static/js/787.a1ef7559.chunk.js",
-    "static/media/OpenSans-Bold.ttf": "/JOBPLUS-REACT-PROJECT/static/media/OpenSans-Bold.dbb97fd982ce1b96b6de.ttf",
-    "static/media/OpenSans-ExtraBold.ttf": "/JOBPLUS-REACT-PROJECT/static/media/OpenSans-ExtraBold.110e781b605b33c1b949.ttf",
-    "static/media/OpenSans-Light.ttf": "/JOBPLUS-REACT-PROJECT/static/media/OpenSans-Light.ed41bedf131bc097372a.ttf",
-    "static/media/OpenSans-Regular.ttf": "/JOBPLUS-REACT-PROJECT/static/media/OpenSans-Regular.1b0809d519837cb7aad3.ttf",
-    "index.html": "/JOBPLUS-REACT-PROJECT/index.html",
-    "main.1fa1810d.css.map": "/JOBPLUS-REACT-PROJECT/static/css/main.1fa1810d.css.map",
-    "main.e01a4a81.js.map": "/JOBPLUS-REACT-PROJECT/static/js/main.e01a4a81.js.map",
-    "787.a1ef7559.chunk.js.map": "/JOBPLUS-REACT-PROJECT/static/js/787.a1ef7559.chunk.js.map"
+    "main.css": "/jobplus-react-project/static/css/main.7a281556.css",
+    "main.js": "/jobplus-react-project/static/js/main.8f369f1e.js",
+    "static/js/787.ffaa8a58.chunk.js": "/jobplus-react-project/static/js/787.ffaa8a58.chunk.js",
+    "static/media/OpenSans-Bold.ttf": "/jobplus-react-project/static/media/OpenSans-Bold.dbb97fd982ce1b96b6de.ttf",
+    "static/media/OpenSans-ExtraBold.ttf": "/jobplus-react-project/static/media/OpenSans-ExtraBold.110e781b605b33c1b949.ttf",
+    "static/media/OpenSans-Light.ttf": "/jobplus-react-project/static/media/OpenSans-Light.ed41bedf131bc097372a.ttf",
+    "static/media/OpenSans-Regular.ttf": "/jobplus-react-project/static/media/OpenSans-Regular.1b0809d519837cb7aad3.ttf",
+    "index.html": "/jobplus-react-project/index.html",
+    "main.7a281556.css.map": "/jobplus-react-project/static/css/main.7a281556.css.map",
+    "main.8f369f1e.js.map": "/jobplus-react-project/static/js/main.8f369f1e.js.map",
+    "787.ffaa8a58.chunk.js.map": "/jobplus-react-project/static/js/787.ffaa8a58.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1fa1810d.css",
-    "static/js/main.e01a4a81.js"
+    "static/css/main.7a281556.css",
+    "static/js/main.8f369f1e.js"
   ]
 }
