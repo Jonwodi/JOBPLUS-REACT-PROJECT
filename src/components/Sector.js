@@ -104,7 +104,7 @@ export default function Sector() {
       <div className={classes.types}>
         <div className={classes.wrap}>
           <div className={classes.picture}>
-            <img src={'./jobplus-react-project/images/tech-big.jpg'} alt={'technology'} />
+            <img src={'./images/tech-big.jpg'} alt={'technology'} />
           </div>
 
           <p className={classes.name}>Technology</p>
@@ -120,7 +120,7 @@ export default function Sector() {
 
         <div className={classes.wrap}>
           <div className={classes.picture}>
-            <img src={'./jobplus-react-project/images/eng-big.jpg'} alt={'engineering'} />
+            <img src={'./images/eng-big.jpg'} alt={'engineering'} />
           </div>
 
           <p className={classes.name}>Engineering</p>
@@ -136,7 +136,7 @@ export default function Sector() {
 
         <div className={classes.wrap}>
           <div className={classes.picture}>
-            <img src={'./jobplus-react-project/images/health-big.jpg'} alt={'health'} />
+            <img src={'./images/health-big.jpg'} alt={'health'} />
           </div>
 
           <p className={classes.name}>Health</p>

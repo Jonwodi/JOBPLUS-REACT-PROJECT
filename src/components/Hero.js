@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     padding: '1.5rem 0',
   },
   bgWithImage: {
-    backgroundImage: 'url(./jobplus-react-project//images/hero-small.png)',
+    backgroundImage: 'url(./images/hero-small.png)',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     width: '100%',

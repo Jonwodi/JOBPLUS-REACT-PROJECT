@@ -18,7 +18,7 @@ import ListingDetails from './pages/ListingDetails';
 function App() {
   let history = useHistory();
   return (
-<BrowserRouter history={history}>
+<BrowserRouter history={history} basename='/jobplus-react-project'>
 <Navbar />
 <Switch>
   <Route exact path='/' render={props => <Home {...props} />} />

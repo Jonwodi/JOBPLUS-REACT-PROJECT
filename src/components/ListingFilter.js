@@ -11,7 +11,8 @@ const useStyles = makeStyles((theme) => ({
     gridGap: '1.2rem',
     ...theme.container,
     marginTop: '1.5rem',
-    marginBottom: '200px'
+    marginBottom: '200px',
+    paddingRight: '20px'
   },
   lblock: {
     gridRow: '1 / 2',
